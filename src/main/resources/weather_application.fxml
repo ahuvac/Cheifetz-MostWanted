@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.util.ArrayList?>
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.Group?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          stylesheets=""
+          prefWidth="300.0" prefHeight="620.0"
+          alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="5" right="5" bottom="5" left="5"/>
+    </padding>
+<Label fx:id="a" text="hi" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+</GridPane>
