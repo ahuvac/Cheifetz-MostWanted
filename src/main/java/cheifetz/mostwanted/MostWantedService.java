@@ -6,6 +6,7 @@ import retrofit2.http.Query;
 
 public interface MostWantedService {
     @GET("/wanted/v1/list")
-    Single<MostWantedFeed> getMostWantedFeed();
+    Single<MostWantedFeed> getMostWantedFeed(@Query("person_classification") String person_classification, @Query("status") String status);
+//    @Query("field_offices") String field_offices,
 
 }

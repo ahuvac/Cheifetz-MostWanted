@@ -10,11 +10,71 @@
 <?import javafx.scene.Group?>
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          stylesheets=""
-          prefWidth="300.0" prefHeight="620.0"
+          stylesheets="style.css"
+          prefWidth="1200.0" prefHeight="750.0"
           alignment="center" hgap="10" vgap="10">
+
     <padding>
-        <Insets top="5" right="5" bottom="5" left="5"/>
+        <Insets top="5" right="5" bottom="5" left="10"/>
     </padding>
-<Label fx:id="a" text="hi" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+    <Label fx:id="title"  styleClass="title" alignment="CENTER" GridPane.columnSpan="2"  GridPane.rowIndex="0" GridPane.columnIndex="10" />
+
+
+    <Label fx:id="name1"  GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Label fx:id="caution1"  GridPane.rowIndex="3" GridPane.columnIndex="0" wrapText="true" maxWidth="275" minWidth="275" minHeight="100"/>
+    <Label fx:id="race1" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <ImageView fx:id="pic1" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+    <Label fx:id="reward1"  GridPane.rowIndex="8" GridPane.columnIndex="0" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+
+
+    <Label fx:id="name2"  GridPane.rowIndex="2" GridPane.columnIndex="10"/>
+    <Label fx:id="caution2"  GridPane.rowIndex="3" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+    <Label fx:id="race2"  GridPane.rowIndex="5" GridPane.columnIndex="10"/>
+    <ImageView fx:id="pic2" GridPane.rowIndex="7" GridPane.columnIndex="10"/>
+    <Label fx:id="reward2"  GridPane.rowIndex="8" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+
+
+    <Label fx:id="name3"  GridPane.rowIndex="2" GridPane.columnIndex="20"/>
+    <Label fx:id="caution3"  GridPane.rowIndex="3" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+    <Label fx:id="race3"  GridPane.rowIndex="5" GridPane.columnIndex="20"/>
+    <ImageView fx:id="pic3" GridPane.rowIndex="7" GridPane.columnIndex="20"/>
+    <Label fx:id="reward3"  GridPane.rowIndex="8" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100" />
+
+
+    <Button fx:id="refresh" text = "Refresh" GridPane.rowIndex="9" GridPane.columnIndex="0" onAction="#refresh"/>
+
+    <fx:define>
+        <ArrayList fx:id="names" >
+            <fx:reference source="name1"/>
+            <fx:reference source="name2"/>
+            <fx:reference source="name3"/>
+
+        </ArrayList>
+
+        <ArrayList fx:id="races" >
+            <fx:reference source="race1"/>
+            <fx:reference source="race2"/>
+            <fx:reference source="race3"/>
+        </ArrayList>
+
+        <ArrayList fx:id="cautions" >
+            <fx:reference source="caution1"/>
+            <fx:reference source="caution2"/>
+            <fx:reference source="caution3"/>
+        </ArrayList>
+
+        <ArrayList fx:id="images" >
+            <fx:reference source="pic1"/>
+            <fx:reference source="pic2"/>
+            <fx:reference source="pic3"/>
+        </ArrayList>
+
+        <ArrayList fx:id="rewards" >
+            <fx:reference source="reward1"/>
+            <fx:reference source="reward2"/>
+            <fx:reference source="reward3"/>
+        </ArrayList>
+    </fx:define>
+
 </GridPane>

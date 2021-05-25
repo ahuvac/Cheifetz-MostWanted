@@ -19,9 +19,9 @@ public class MostWantedApplication extends Application {
 
         Parent root = loader.load();
 
-        Scene scene = new Scene(root, 300, 620);
+        Scene scene = new Scene(root, 1200, 850);
 
-        stage.setTitle("5 Day Weather");
+        stage.setTitle("FBI Most Wanted");
         stage.setScene(scene);
         stage.show();
     }
