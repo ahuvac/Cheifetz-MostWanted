@@ -20,26 +20,35 @@
 
     <Label fx:id="title"  styleClass="title"  GridPane.columnSpan="2"  GridPane.rowIndex="0" GridPane.columnIndex="10" />
 
+    <Label  text="Name:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Label text="Details:"  GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <Label  text="Description:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <Label  text="Race:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Label  text="Reward:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <Label  text="Image:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
 
-    <Label fx:id="name1"  GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-    <Label fx:id="caution1"  GridPane.rowIndex="3" GridPane.columnIndex="0"  wrapText="true" maxWidth="275" minWidth="235" minHeight="100"/>
-    <ImageView fx:id="pic1" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
-    <Label fx:id="race1" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
-    <Label fx:id="reward1"  GridPane.rowIndex="6" GridPane.columnIndex="0" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
+    <Label fx:id="name1"  GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Label fx:id="local1"  GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label fx:id="caution1"  GridPane.rowIndex="4" GridPane.columnIndex="1"  wrapText="true" maxWidth="275" minWidth="235" minHeight="100"/>
+    <Label fx:id="race1" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Label fx:id="reward1"  GridPane.rowIndex="6" GridPane.columnIndex="1" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
+    <ImageView fx:id="pic1" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
 
 
-    <Label fx:id="name2"  GridPane.rowIndex="2" GridPane.columnIndex="10"/>
-    <Label fx:id="caution2"  GridPane.rowIndex="3" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
-    <ImageView fx:id="pic2" GridPane.rowIndex="4" GridPane.columnIndex="10"/>
-    <Label fx:id="race2"  GridPane.rowIndex="5" GridPane.columnIndex="10"/>
-    <Label fx:id="reward2"  GridPane.rowIndex="6" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
+    <Label fx:id="name2"  GridPane.rowIndex="2" GridPane.columnIndex="11"/>
+    <Label fx:id="local2"  GridPane.rowIndex="3" GridPane.columnIndex="11"/>
+    <Label fx:id="caution2"  GridPane.rowIndex="4" GridPane.columnIndex="11" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
+    <Label fx:id="race2"  GridPane.rowIndex="5" GridPane.columnIndex="11"/>
+    <Label fx:id="reward2"  GridPane.rowIndex="6" GridPane.columnIndex="11" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
+    <ImageView fx:id="pic2" GridPane.rowIndex="7" GridPane.columnIndex="11"/>
 
 
     <Label fx:id="name3"  GridPane.rowIndex="2" GridPane.columnIndex="20"/>
-    <Label fx:id="caution3"  GridPane.rowIndex="3" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
-    <ImageView fx:id="pic3" GridPane.rowIndex="4" GridPane.columnIndex="20"/>
+    <Label fx:id="local3"  GridPane.rowIndex="3" GridPane.columnIndex="20"/>
+    <Label fx:id="caution3"  GridPane.rowIndex="4" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
     <Label fx:id="race3"  GridPane.rowIndex="5" GridPane.columnIndex="20"/>
     <Label fx:id="reward3"  GridPane.rowIndex="6" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100" />
+    <ImageView fx:id="pic3" GridPane.rowIndex="7" GridPane.columnIndex="20"/>
 
 
     <Button fx:id="refresh" text = "Refresh" GridPane.rowIndex="9" GridPane.columnIndex="0" onAction="#refresh"/>
@@ -74,6 +83,13 @@
             <fx:reference source="reward1"/>
             <fx:reference source="reward2"/>
             <fx:reference source="reward3"/>
+        </ArrayList>
+
+        <ArrayList fx:id="locals" >
+            <fx:reference source="local1"/>
+            <fx:reference source="local2"/>
+            <fx:reference source="local3"/>
+
         </ArrayList>
     </fx:define>
 
