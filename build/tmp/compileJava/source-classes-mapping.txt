@@ -1,12 +1,12 @@
-cheifetz/mostwanted/MostWantedServiceFactory.java
- cheifetz.mostwanted.MostWantedServiceFactory
-cheifetz/mostwanted/MostWantedService.java
- cheifetz.mostwanted.MostWantedService
 cheifetz/mostwanted/MostWantedFeed.java
  cheifetz.mostwanted.MostWantedFeed
  cheifetz.mostwanted.MostWantedFeed$Images
  cheifetz.mostwanted.MostWantedFeed$Items
+cheifetz/mostwanted/MostWantedService.java
+ cheifetz.mostwanted.MostWantedService
 cheifetz/mostwanted/MostWantedController.java
  cheifetz.mostwanted.MostWantedController
 cheifetz/mostwanted/MostWantedApplication.java
  cheifetz.mostwanted.MostWantedApplication
+cheifetz/mostwanted/MostWantedServiceFactory.java
+ cheifetz.mostwanted.MostWantedServiceFactory

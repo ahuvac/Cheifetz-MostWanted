@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cheifetz.mostwanted.MostWantedControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-25T06:42:28" hostname="Ahuvas-MBP" time="1.595">
+  <properties/>
+  <testcase name="initialize" classname="cheifetz.mostwanted.MostWantedControllerTest" time="1.595"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

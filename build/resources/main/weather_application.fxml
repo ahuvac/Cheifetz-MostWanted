@@ -18,28 +18,28 @@
         <Insets top="5" right="5" bottom="5" left="10"/>
     </padding>
 
-    <Label fx:id="title"  styleClass="title" alignment="CENTER" GridPane.columnSpan="2"  GridPane.rowIndex="0" GridPane.columnIndex="10" />
+    <Label fx:id="title"  styleClass="title"  GridPane.columnSpan="2"  GridPane.rowIndex="0" GridPane.columnIndex="10" />
 
 
     <Label fx:id="name1"  GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-    <Label fx:id="caution1"  GridPane.rowIndex="3" GridPane.columnIndex="0" wrapText="true" maxWidth="275" minWidth="275" minHeight="100"/>
+    <Label fx:id="caution1"  GridPane.rowIndex="3" GridPane.columnIndex="0"  wrapText="true" maxWidth="275" minWidth="235" minHeight="100"/>
+    <ImageView fx:id="pic1" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
     <Label fx:id="race1" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
-    <ImageView fx:id="pic1" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
-    <Label fx:id="reward1"  GridPane.rowIndex="8" GridPane.columnIndex="0" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+    <Label fx:id="reward1"  GridPane.rowIndex="6" GridPane.columnIndex="0" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
 
 
     <Label fx:id="name2"  GridPane.rowIndex="2" GridPane.columnIndex="10"/>
-    <Label fx:id="caution2"  GridPane.rowIndex="3" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+    <Label fx:id="caution2"  GridPane.rowIndex="3" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
+    <ImageView fx:id="pic2" GridPane.rowIndex="4" GridPane.columnIndex="10"/>
     <Label fx:id="race2"  GridPane.rowIndex="5" GridPane.columnIndex="10"/>
-    <ImageView fx:id="pic2" GridPane.rowIndex="7" GridPane.columnIndex="10"/>
-    <Label fx:id="reward2"  GridPane.rowIndex="8" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+    <Label fx:id="reward2"  GridPane.rowIndex="6" GridPane.columnIndex="10" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
 
 
     <Label fx:id="name3"  GridPane.rowIndex="2" GridPane.columnIndex="20"/>
-    <Label fx:id="caution3"  GridPane.rowIndex="3" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100"/>
+    <Label fx:id="caution3"  GridPane.rowIndex="3" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100"/>
+    <ImageView fx:id="pic3" GridPane.rowIndex="4" GridPane.columnIndex="20"/>
     <Label fx:id="race3"  GridPane.rowIndex="5" GridPane.columnIndex="20"/>
-    <ImageView fx:id="pic3" GridPane.rowIndex="7" GridPane.columnIndex="20"/>
-    <Label fx:id="reward3"  GridPane.rowIndex="8" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="275" minHeight="100" />
+    <Label fx:id="reward3"  GridPane.rowIndex="6" GridPane.columnIndex="20" wrapText="true" maxWidth="275"  minWidth="235" minHeight="100" />
 
 
     <Button fx:id="refresh" text = "Refresh" GridPane.rowIndex="9" GridPane.columnIndex="0" onAction="#refresh"/>

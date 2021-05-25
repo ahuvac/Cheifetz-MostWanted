@@ -20,31 +20,14 @@ public class MostWantedController {
 
     @FXML
     List<Label> names;
-
-    @FXML
-    List<Label> descriptions;
-
-    @FXML
-    List<Label> sexes;
-
     @FXML
     List<Label> races;
-
     @FXML
     List<ImageView> images;
-
     @FXML
     List<Label> rewards;
-
     @FXML
     List<Label> cautions;
-
-    @FXML
-    ImageView pic1;
-    @FXML
-    ImageView pic2;
-    @FXML
-    ImageView pic3;
 
     @FXML
     Label title;
@@ -62,7 +45,7 @@ public class MostWantedController {
     }
 
     public void doService() {
-        Disposable disposable = service.getMostWantedFeed("main", "na")
+        Disposable disposable = service.getMostWantedFeed("main")
                 .subscribeOn(Schedulers.io())
                 .observeOn(Schedulers.trampoline())
                 .subscribe(this::onMostWantedFeed, this::onError);

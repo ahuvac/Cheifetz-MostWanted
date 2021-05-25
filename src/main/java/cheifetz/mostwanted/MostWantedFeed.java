@@ -15,9 +15,7 @@ public class MostWantedFeed {
         String title;
         String description;
         List<Images> images;
-        String sex;
         String race;
-        List<String> possible_states;
         String caution;
         String reward_text;
     }
