@@ -8,11 +8,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class MostWantedController {
+
+    static final Random RAND = new Random();
 
     @FXML
     List<Label> names;
@@ -55,31 +58,34 @@ public class MostWantedController {
     }
 
     public void setTexts(MostWantedFeed feed) {
-        Random rand = new Random();
         ArrayList<MostWantedFeed.Items> itemList = new ArrayList<>();
 
-        for (int i = 0 ; i < names.size(); i ++){
-            Label lbl = names.get(i);
-            while (itemList.size() < i + 1) {
-                MostWantedFeed.Items item = feed.items.get(rand.nextInt(feed.items.size()));
+        for (int i = 0; i < names.size(); i++) {
+            Label label = names.get(i);
+            // running until we find an item with a title
+            while (true) {
+                MostWantedFeed.Items item = feed.items.get(RAND.nextInt(feed.items.size()));
                 if (item.title != null && !itemList.contains(item)) {
                     itemList.add(item);
-                    String fullName = (item.title);
+                    String fullName = item.title;
+                    //separating title into name and details by dashes
                     if (fullName.contains(" - ")) {
-                        lbl.setText(fullName.substring(0, fullName.indexOf(" - ")));
+                        label.setText(fullName.substring(0, fullName.indexOf(" - ")));
                         locals.get(i).setText(fullName.substring(fullName.indexOf("-") + 1));
                     } else {
-                        lbl.setText(fullName);
+                        label.setText(fullName);
                     }
+                    break;
                 }
             }
         }
 
         for (int i = 0; i < names.size(); i++) {
-            races.get(i).setText(fixNulls(itemList.get(i).race));
-            cautions.get(i).setText(fixNulls(itemList.get(i).caution));
-            rewards.get(i).setText(fixNulls(itemList.get(i).reward_text));
-            images.get(i).setImage(new Image(itemList.get(i).images.get(0).getImageURL()));
+            MostWantedFeed.Items item = itemList.get(i);
+            races.get(i).setText(fixNulls(item.race));
+            cautions.get(i).setText(fixNulls(item.caution));
+            rewards.get(i).setText(fixNulls(item.reward_text));
+            images.get(i).setImage(new Image(item.images.get(0).getImageURL()));
         }
     }
 

@@ -1,2 +1,4 @@
+cheifetz/mostwanted/MostWantedServiceTest.java
+ cheifetz.mostwanted.MostWantedServiceTest
 cheifetz/mostwanted/MostWantedControllerTest.java
  cheifetz.mostwanted.MostWantedControllerTest

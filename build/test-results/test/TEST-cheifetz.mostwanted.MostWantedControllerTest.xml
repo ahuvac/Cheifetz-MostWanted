@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="cheifetz.mostwanted.MostWantedControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-25T21:26:09" hostname="Ahuvas-Macbook-Pro.local" time="3.97">
+<testsuite name="cheifetz.mostwanted.MostWantedControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-25T23:11:26" hostname="Ahuvas-MBP" time="3.614">
   <properties/>
-  <testcase name="doService" classname="cheifetz.mostwanted.MostWantedControllerTest" time="2.682"/>
-  <testcase name="initialize" classname="cheifetz.mostwanted.MostWantedControllerTest" time="0.032"/>
-  <testcase name="refresh" classname="cheifetz.mostwanted.MostWantedControllerTest" time="0.04"/>
-  <testcase name="setTexts" classname="cheifetz.mostwanted.MostWantedControllerTest" time="1.214"/>
+  <testcase name="doService" classname="cheifetz.mostwanted.MostWantedControllerTest" time="2.143"/>
+  <testcase name="initialize" classname="cheifetz.mostwanted.MostWantedControllerTest" time="0.043"/>
+  <testcase name="refresh" classname="cheifetz.mostwanted.MostWantedControllerTest" time="0.044"/>
+  <testcase name="setTexts" classname="cheifetz.mostwanted.MostWantedControllerTest" time="1.383"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
