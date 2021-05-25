@@ -18,10 +18,18 @@ public class MostWantedFeed {
         String race;
         String caution;
         String reward_text;
+       
+        
     }
+    
 
     static class Images {
         String thumb;
+
+        public String getImageURL() {
+            return thumb;
+        }
+
     }
 
 

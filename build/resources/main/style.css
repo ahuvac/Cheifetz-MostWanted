@@ -1,6 +1,17 @@
+
 .title{
 -fx-font-size: 30pt
 }
 
 .bigLabels{
+}
+
+.root{
+-fx-background-color: #6293d9;
+}
+
+.btn{
+-fx-background-color: white;
+-fx-font-size: 20pt
+
 }

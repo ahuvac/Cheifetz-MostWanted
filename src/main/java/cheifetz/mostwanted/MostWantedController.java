@@ -64,7 +64,7 @@ public class MostWantedController {
                 MostWantedFeed.Items item = feed.items.get(rand.nextInt(feed.items.size()));
                 if (item.title != null && !itemList.contains(item)) {
                     itemList.add(item);
-                    String fullName = item.title;
+                    String fullName = (item.title);
                     if (fullName.contains(" - ")) {
                         lbl.setText(fullName.substring(0, fullName.indexOf(" - ")));
                         locals.get(i).setText(fullName.substring(fullName.indexOf("-") + 1));
@@ -79,7 +79,7 @@ public class MostWantedController {
             races.get(i).setText(fixNulls(itemList.get(i).race));
             cautions.get(i).setText(fixNulls(itemList.get(i).caution));
             rewards.get(i).setText(fixNulls(itemList.get(i).reward_text));
-            images.get(i).setImage(new Image(itemList.get(i).images.get(0).thumb));
+            images.get(i).setImage(new Image(itemList.get(i).images.get(0).getImageURL()));
         }
     }
 

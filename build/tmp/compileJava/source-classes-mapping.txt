@@ -1,7 +1,7 @@
-cheifetz/mostwanted/MostWantedServiceFactory.java
- cheifetz.mostwanted.MostWantedServiceFactory
 cheifetz/mostwanted/MostWantedService.java
  cheifetz.mostwanted.MostWantedService
+cheifetz/mostwanted/MostWantedServiceFactory.java
+ cheifetz.mostwanted.MostWantedServiceFactory
 cheifetz/mostwanted/MostWantedFeed.java
  cheifetz.mostwanted.MostWantedFeed
  cheifetz.mostwanted.MostWantedFeed$Images

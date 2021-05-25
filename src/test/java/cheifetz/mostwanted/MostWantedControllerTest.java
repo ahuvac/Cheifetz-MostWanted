@@ -101,13 +101,28 @@ public class MostWantedControllerTest {
         //given
         givenMostWantedController();
         MostWantedFeed feed = mock(MostWantedFeed.class);
-        MostWantedFeed.Items item = mock(MostWantedFeed.Items.class);
-        ArrayList<MostWantedFeed.Items> itemList = new ArrayList<>();
-        MostWantedFeed.Images images = mock(MostWantedFeed.Images.class);
+        feed.items = Arrays.asList(
+                mock(MostWantedFeed.Items.class),
+                mock(MostWantedFeed.Items.class),
+                mock(MostWantedFeed.Items.class));
 
-//        doReturn(20).when(feed.items).size();
-//        doReturn(anyInt()).when(feed.items).get(anyInt());
+        for (int i = 0; i < 3; i++) {
+            feed.items.get(i).images = Arrays.asList(
+                    mock(MostWantedFeed.Images.class),
+                    mock(MostWantedFeed.Images.class),
+                    mock(MostWantedFeed.Images.class));
+        }
 
+        feed.items.get(0).title = "John";
+        feed.items.get(1).title = "Joe";
+        feed.items.get(2).title = "Tom";
+
+        doReturn("https://www.fbi.gov/wanted/seeking-info/structure-fire---arson/@@images/image/thumb").
+                when(feed.items.get(0).images.get(0)).getImageURL();
+        doReturn("https://www.fbi.gov/wanted/seeking-info/structure-fire---arson/@@images/image/thumb").
+                when(feed.items.get(1).images.get(0)).getImageURL();
+        doReturn("https://www.fbi.gov/wanted/seeking-info/structure-fire---arson/@@images/image/thumb").
+                when(feed.items.get(2).images.get(0)).getImageURL();
         //when
         controller.setTexts(feed);
 

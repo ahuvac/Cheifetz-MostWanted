@@ -51,7 +51,7 @@
     <ImageView fx:id="pic3" GridPane.rowIndex="7" GridPane.columnIndex="20"/>
 
 
-    <Button fx:id="refresh" text = "Refresh" GridPane.rowIndex="9" GridPane.columnIndex="0" onAction="#refresh"/>
+    <Button fx:id="refresh" text = "Refresh" GridPane.rowIndex="9" GridPane.columnIndex="0" onAction="#refresh" styleClass="btn"/>
 
     <fx:define>
         <ArrayList fx:id="names" >
